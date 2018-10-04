@@ -49,7 +49,7 @@
                 if validate == True: 
                     return redirect('greeting.html?username={0}'.format(username))
                 else: 
-                    return render_template('/login', 
+                    return render_template('/login', username='', password='', login_error=login_error)
             
                 
 
